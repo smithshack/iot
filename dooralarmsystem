@@ -1,0 +1,9 @@
+Iot monitor
+Motion>true
+Sire>false
+Door>lock
+
+
+Motion>false
+Siren>true
+Door>false
