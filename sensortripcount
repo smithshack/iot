@@ -1,0 +1,16 @@
+#in pyhton
+
+from gpio import *
+from time import *
+
+count=0
+
+
+pinMode(0,INPUT)
+pinMode(0,OUTPUT)
+
+while True:
+	if digitalRead(0)==HIGH:
+		count=count+2
+		print("Counting"+str(count))
+		sleep(.3)
