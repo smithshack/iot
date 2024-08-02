@@ -1,0 +1,21 @@
+#in java
+
+//Setup Pins of the Microcontroller
+function setup () {
+ pinMode (0, INPUT); //First Pin 
+ pinMode (1, OUTPUT) ; //Second Pin
+}
+ 
+ //Using a Loop to continously read the data from the pins
+function loop (){
+ var motion = digitalRead (0);
+ 
+ Serial.println(motion);
+ //To raise the alarm (On/Off)
+ if (motion == 1023) {
+ digitalWrite (1, HIGH);
+ }
+ else {
+ digitalWrite (1, LOW);
+ 	
+ }
